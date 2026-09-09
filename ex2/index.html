@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 2 - Bresenham com WebGL</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #111;
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        canvas {
+            border: 2px solid #555;
+            background-color: #000;
+        }
+
+        #info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="glCanvas" width="600" height="600"></canvas>
+    <div id="info">Modo atual: <b>Linha (R)</b> | Cor: <span id="colorBox"
+            style="display:inline-block;width:12px;height:12px;background:blue;"></span> | Teclas 0-9 para cor, R para
+        Reta, T para Triângulo</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
